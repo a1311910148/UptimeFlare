@@ -42,8 +42,8 @@ const workerConfig: WorkerConfig = {
       name: 'akile-jp-iij-299G访问google',
       // `method` should be a valid HTTP Method
       method: 'GET',
-      // `target` is a valid URL 
-      target: 'http://156.231.115.120/'
+      // `target` is a valid URL http://156.231.115.120/
+      target: 'https://www.google/com'
     },
     // Example TCP Monitor
     {
