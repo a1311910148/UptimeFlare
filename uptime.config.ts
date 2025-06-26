@@ -39,7 +39,7 @@ const workerConfig: WorkerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'vps_akile_jp_iij_to_google_monitor',
       // `name` is used at status page and callback message
-      name: 'akile-jp-iij-299G 访问google',
+      name: 'akile-jp-iij-299G访问google',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL 
