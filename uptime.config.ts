@@ -13,7 +13,7 @@ const pageConfig: PageConfig = {
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
-    '🌐 Public': ['baidu_monitor', 'vps_akile_jp_iij_monitor']
+    '🌐 Public': ['baidu_monitor', 'vps_akile_jp_iij_to_google_monitor','vps_akile_jp_iij_ssh_monitor']
   },
 }
 
@@ -35,9 +35,20 @@ const workerConfig: WorkerConfig = {
       // `target` is a valid URL
       target: 'https://www.baidu.com/'
     },
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'vps_akile_jp_iij_to_google_monitor',
+      // `name` is used at status page and callback message
+      name: 'akile-jp-iij-299G 访问google',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'http://156.231.115.120:5000/check_google'
+    },
+    
     // Example TCP Monitor
     {
-      id: 'vps_akile_jp_iij_monitor',
+      id: 'vps_akile_jp_iij_ssh_monitor',
       name: 'akile-jp-iij-299G',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
