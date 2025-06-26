@@ -13,7 +13,7 @@ const pageConfig: PageConfig = {
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
-    '🌐 Public': ['baidu_monitor', 'vps_akile_jp_iij_ssh_monitor','vps_akile_jp_iij_to_google_monitor']
+    '🌐 Public': ['baidu_monitor', 'akile_iij_ssh_monitor','akile_iij_google_monitor']
   },
 }
 
@@ -37,9 +37,9 @@ const workerConfig: WorkerConfig = {
     },
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'vps_akile_jp_iij_to_google_monitor',
+      id: 'akile_iij_google_monitor',
       // `name` is used at status page and callback message
-      name: 'akile-jp-iij-299G访问google',
+      name: 'akile-jp-iij-299G-to-google',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL http://156.231.115.120/
@@ -47,14 +47,12 @@ const workerConfig: WorkerConfig = {
     },
     // Example TCP Monitor
     {
-      id: 'vps_akile_jp_iij_ssh_monitor',
+      id: 'akile_iij_ssh_monitor',
       name: 'akile-jp-iij-299G',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
       target: '156.231.115.120:22',
-      tooltip: 'My production server SSH',
-      statusPageLink: 'https://example.com',
       timeout: 5000,
     },
   ],
