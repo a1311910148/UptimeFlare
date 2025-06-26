@@ -43,7 +43,7 @@ const workerConfig: WorkerConfig = {
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
-      target: 'http://156.231.115.120:5000/check_google/'
+      target: 'http://156.231.115.120:5000/'
     },
     // Example TCP Monitor
     {
