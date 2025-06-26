@@ -43,12 +43,12 @@ const workerConfig: WorkerConfig = {
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL http://156.231.115.120/
-      target: 'https://x.com/'
+      target: 'http://156.231.115.120/
     },
     // Example TCP Monitor
     {
       id: 'akile_iij_ssh_monitor',
-      name: 'akile-jp-iij-299G',
+      name: 'akile-jp-iij-299G-ssh',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
