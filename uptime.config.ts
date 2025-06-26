@@ -13,7 +13,7 @@ const pageConfig: PageConfig = {
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
-    '🌐 Public': ['baidu_monitor', 'akile_iij_ssh_monitor','akile_iij_google_monitor']
+    '🌐 Public': ['baidu_monitor', 'akile_iij_ssh_monitor','akile_iij_to_google_monitor']
   },
 }
 
@@ -37,9 +37,9 @@ const workerConfig: WorkerConfig = {
     },
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'akile_iij_google_monitor',
+      id: 'akile_iij_to_google_monitor',
       // `name` is used at status page and callback message
-      name: 'akile-jp-iij-299G-to-google',
+      name: 'akile-jp-iij-299G-google',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL http://156.231.115.120/
