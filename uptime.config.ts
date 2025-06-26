@@ -13,7 +13,7 @@ const pageConfig: PageConfig = {
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
-    '🌐 Public': ['baidu_monitor', 'akile_iij_ssh_monitor','akile_iij_google_monitor']
+    '🌐 Public': ['baidu_monitor', 'akile_iij_ssh_monitor']
   },
 }
 
@@ -29,22 +29,22 @@ const workerConfig: WorkerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'baidu_monitor',
       // `name` is used at status page and callback message
-      name: '百度',
+      name: 'youtube',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
-      target: 'https://www.baidu.com/'
+      target: 'https://www.youtube.com'
     },
-    {
-      // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'akile_iij_google_monitor',
-      // `name` is used at status page and callback message
-      name: 'akile-jp-iij-299G-to-google',
-      // `method` should be a valid HTTP Method
-      method: 'GET',
-      // `target` is a valid URL http://156.231.115.120/
-      target: 'http://156.231.115.120/',
-    },
+    // {
+    //   // `id` should be unique, history will be kept if the `id` remains constant
+    //   id: 'akile_iij_google_monitor',
+    //   // `name` is used at status page and callback message
+    //   name: 'akile-jp-iij-299G-to-google',
+    //   // `method` should be a valid HTTP Method
+    //   method: 'GET',
+    //   // `target` is a valid URL http://156.231.115.120/
+    //   target: 'http://156.231.115.120/',
+    // },
     // Example TCP Monitor
     {
       id: 'akile_iij_ssh_monitor',
